@@ -1,0 +1,70 @@
+.favorite-sites {
+    margin: 20px 0;
+}
+
+.favorite-sites[data-columns="2"] {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.fsl-column {
+    width: 48%;
+}
+
+.fsl-column h1,
+.fsl-column h2,
+.fsl-column h3,
+.fsl-column h4,
+.fsl-column h5,
+.fsl-column h6 {
+    color: #333;
+    margin: 20px 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.favorite-sites-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.favorite-sites-list li {
+    margin: 10px 0;
+    position: relative;
+    padding-left: 15px;
+}
+
+.favorite-sites-list li::before {
+    content: "•";
+    position: absolute;
+    left: 2px;
+    color: #000000;
+    font-size: 16px;
+}
+
+.favorite-sites-list a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+.favorite-sites-list a:hover {
+    text-decoration: underline;
+}
+
+.favorite-sites-list li::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+@media (max-width: 768px) {
+    .favorite-sites[data-columns="2"] {
+        flex-direction: column;
+    }
+    
+    .fsl-column {
+        width: 100%;
+    }
+}
