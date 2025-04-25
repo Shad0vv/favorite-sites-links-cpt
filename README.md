@@ -1,1 +1,3 @@
-Favorite Sites Links (CPT)
+# Favorite Sites Links (CPT)
+Плагин для отображения списка любимых сайтов через Custom Post Type с импортом, проверкой дубликатов и кастомными стилями
+
